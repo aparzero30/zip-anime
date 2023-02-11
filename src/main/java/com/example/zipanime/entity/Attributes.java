@@ -1,6 +1,9 @@
 package com.example.zipanime.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Attributes {
     private String createdAt;
     private String updatedAt;

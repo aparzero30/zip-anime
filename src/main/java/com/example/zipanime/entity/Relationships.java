@@ -1,25 +1,44 @@
 package com.example.zipanime.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Relationships {
-    private Link parent;
-    private Link anime;
-    private Link drama;
-    private Link manga;
 
-    public Link getParent() {
+        private Parent parent;
+        private Anime anime;
+        private Drama drama;
+        private Manga manga;
+
+    public Parent getParent() {
         return parent;
     }
 
-    public Link getAnime() {
+    public void setParent(Parent parent) {
+        this.parent = parent;
+    }
+
+    public Anime getAnime() {
         return anime;
     }
 
-    public Link getDrama() {
+    public void setAnime(Anime anime) {
+        this.anime = anime;
+    }
+
+    public Drama getDrama() {
         return drama;
     }
 
-    public Link getManga() {
+    public void setDrama(Drama drama) {
+        this.drama = drama;
+    }
+
+    public Manga getManga() {
         return manga;
+    }
+
+    public void setManga(Manga manga) {
+        this.manga = manga;
     }
 }

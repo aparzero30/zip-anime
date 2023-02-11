@@ -1,35 +1,46 @@
-package com.example.zipanime.entity;
-
+package com.example.zipanime.anime;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.springframework.stereotype.Service;
-
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Category {
+public class Anime {
     private String id;
     private String type;
     private Link links;
     private Attributes attributes;
-    private Relationships relationships;
 
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getType() {
         return type;
     }
 
+    public void setType(String type) {
+        this.type = type;
+    }
+
     public Link getLinks() {
         return links;
+    }
+
+    public void setLinks(Link links) {
+        this.links = links;
     }
 
     public Attributes getAttributes() {
         return attributes;
     }
 
-    public Relationships getRelationships() {
-        return relationships;
+    public void setAttributes(Attributes attributes) {
+        this.attributes = attributes;
     }
+
+
+
 }
