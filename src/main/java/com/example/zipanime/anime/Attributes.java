@@ -26,14 +26,28 @@ public class Attributes {
     private String nextRelease;
     private int popularityRank;
     private int ratingRank;
-    private String ageRating;
+    private AgeRating ageRating;
     private String ageRatingGuide;
-    private String subtype;
+    private Subtype subtype;
     private String status;
     private String tba;
     private PosterImage posterImage;
 
     private PosterImage coverImage;
+
+    private int episodeCount;
+
+    private int episodeLength;
+
+    private String youtubeVideoId;
+
+    private boolean nsfw;
+
+    private Relationships relationships;
+
+
+
+
 
     public String getCreatedAt() {
         return createdAt;
@@ -179,11 +193,11 @@ public class Attributes {
         this.ratingRank = ratingRank;
     }
 
-    public String getAgeRating() {
+    public AgeRating getAgeRating() {
         return ageRating;
     }
 
-    public void setAgeRating(String ageRating) {
+    public void setAgeRating(AgeRating ageRating) {
         this.ageRating = ageRating;
     }
 
@@ -195,11 +209,12 @@ public class Attributes {
         this.ageRatingGuide = ageRatingGuide;
     }
 
-    public String getSubtype() {
+
+    public Subtype getSubtype() {
         return subtype;
     }
 
-    public void setSubtype(String subtype) {
+    public void setSubtype(Subtype subtype) {
         this.subtype = subtype;
     }
 
@@ -233,5 +248,45 @@ public class Attributes {
 
     public void setCoverImage(PosterImage  coverImage) {
         this.coverImage = coverImage;
+    }
+
+    public int getEpisodeCount() {
+        return episodeCount;
+    }
+
+    public void setEpisodeCount(int episodeCount) {
+        this.episodeCount = episodeCount;
+    }
+
+    public int getEpisodeLength() {
+        return episodeLength;
+    }
+
+    public void setEpisodeLength(int episodeLength) {
+        this.episodeLength = episodeLength;
+    }
+
+    public String getYoutubeVideoId() {
+        return youtubeVideoId;
+    }
+
+    public void setYoutubeVideoId(String youtubeVideoId) {
+        this.youtubeVideoId = youtubeVideoId;
+    }
+
+    public boolean isNsfw() {
+        return nsfw;
+    }
+
+    public void setNsfw(boolean nsfw) {
+        this.nsfw = nsfw;
+    }
+
+    public Relationships getRelationships() {
+        return relationships;
+    }
+
+    public void setRelationships(Relationships relationships) {
+        this.relationships = relationships;
     }
 }

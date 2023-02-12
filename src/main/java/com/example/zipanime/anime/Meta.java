@@ -3,20 +3,19 @@ package com.example.zipanime.anime;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.awt.*;
+import java.util.Map;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Meta {
-    private Dimensions dimensions;
 
+    private Map<String, Dimension> dimensions;
 
-
-
-
-
-    public Dimensions getDimensions() {
+    public Map<String, Dimension> getDimensions() {
         return dimensions;
     }
 
-    public void setDimensions(Dimensions dimensions) {
+    public void setDimensions(Map<String, Dimension> dimensions) {
         this.dimensions = dimensions;
     }
 }
